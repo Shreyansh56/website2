@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-bg1: rgb(58, 130, 179);
+    --main-bg2: rgb(48, 48, 117);
+}
+
+.max-width1{
+    max-width: 962px;
+}
+
+.max-width2{
+    max-width: 1100px;
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* ###################  media queries #################### */
+@media only screen and (max-width: 992px) {
+    nav {
+        text-align: center;
+    }
+
+    nav li{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .header-text-part{
+        text-align: center;
+    }
+
+    .header h1{
+        /* align-self: auto; */
+        margin: 0 auto;
+    }
+
+    .header p{
+        align-self: auto;
+        margin: 0 auto;
+    }
+    .header-btns{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .footer-title{
+        justify-content: center;
+    }
+}
+
+/* ################## navbar coding starts ################# */
+.bg-light{
+    background-color: white!important;
+}
+
+.nav-link{
+    color: var(--main-bg2)!important;
+}
+
+nav{
+    font-weight: bold;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    /* z-index: 9999999999; */
+}
+
+.navbar-nav .active a{
+    color: var(--main-bg1)!important;
+}
+
+.navbar-brand{
+    color: var(--main-bg1)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ################## navbar coding ends ################# */
+
+
+.common-button{
+    display: flex;
+    align-items: center;
+    color: white!important;
+    background-color: var(--main-bg2);
+    padding: 7px 14px;
+    border-radius: 85px;
+}
+
+.common-button:hover{
+    text-decoration: none;
+    color: white!important;
+}
+
+/* ###########################  header styling starts ################################ */
+
+.header{
+    height: 90vh;
+}
+
+.header-img-part{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .headerCont{
+    height: 100%;
+}
+
+.header .row{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text-part{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-btns{
+    align-self: baseline;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    color: var(--main-bg1);
+    font-size: 2em;
+    height: 100px;
+    align-self: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header p{
+    color: var(--main-bg2);
+    height: 50px;
+}
+
+.header-btn {
+    margin-right: 0.5em;
+    color: #fff;
+    background: var(--main-bg2);
+    padding: 6px 13px;
+}
+
+.header-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .row .col-md-12{
+    height: 50%;
+}
+.header img{
+    width: 88%;
+}
+
+.header-bg{
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(209, 231, 240, 0.507); */
+}
+
+/* ###########################  header styling ends ################################ */
+
+/* ###########################  app features styling starts ################################ */
+.appSectionText h3{
+    height: 36px;
+    color: var(--main-bg1);
+    font-size: 1.5em;
+}
+
+.app_features hr{
+    background-color: var(--main-bg2);
+}
+
+.appSectionText{
+    text-align: center;
+}
+
+.appSectionText p{
+    color: var(--main-bg2);
+}
+
+.appCardText h6{
+    height: 26px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.appCardText p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.appCard{
+    display: flex;
+}
+
+.appCardText{
+    margin-left: 0.7em;
+    width: 71%;
+}
+
+.appCardIcon{
+    color: var(--main-bg1);
+    display: flex;
+    justify-content: center;
+    /* width: 4em; */
+}
+
+.fa-scroll{
+    font-size: 1.6rem;
+}
+
+.appCard{
+    width: 50%;
+    padding: 10px;
+}
+
+.appCardIcon{
+    width: 17%;
+}
+
+.app-desc h3{
+    font-weight: bolder;
+    font-size: 1.5em;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-check{
+    color: green;
+}
+
+.img-app-features-3{
+    width: 74%;
+}
+
+
+/* ###########################  app features styling ends ################################ */
+
+/* ######################## gallery starts ################################# */
+.gallery h1{
+    font-size: 2.4em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-bg1);
+    height: 49px;
+}
+
+.gallery p{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+/* ######################## gallery ends ################################# */
+
+/* ###################  testimonials starts ######################## */
+
+.testimonials{
+    background-color: rgb(246 243 243 / 0.5);   
+}
+
+.test-cont{
+    width: 35%;
+    height: 28%;
+    background-color: rgb(210, 226, 65);
+    margin: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.test-cont img{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left:-42px;
+}
+
+.test-cont h6{
+    height: 28px;
+}
+
+
+.title-font{
+    color: var(--main-bg1);
+    font-weight: bolder;
+    height: 47px;
+}
+
+.testimonials h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--main-bg1);
+    font-weight: bolder;
+    height: 2.2em;
+    margin-top: 14px;
+}
+/* ###################  testimonials ends ######################## */
+
+
+/* ############## pricing starts ################ */
+.price{
+    height: 57px;
+}
+/* ############## pricing ends ################ */
+
+
+/* ############################# FAQ starts ############################## */
+
+.bg-faq{
+    background-color: rgba(238, 238, 255, 0.445);
+}
+
+.faq{
+    margin-top: 45px;
+}
+
+.faq h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--main-bg1);
+    font-weight: bolder;
+    height: 2.2em;
+}
+
+.faq p{
+    text-align: center;
+    color: var(--main-bg2);
+}
+
+.collapse-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.collapse-link:hover{
+    text-decoration: none;
+    color: var(--main-bg1);
+    font-weight: bold;
+}
+
+.fa-question-circle{
+    color: #b6afaf;
+}
+
+/* ############################# FAQ ends ######################*/
+
+/* ############################# Contact styling starts ######################*/
+.contact h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--main-bg1);
+    font-weight: bolder;
+    height: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    text-align: center;
+    color: var(--main-bg2);
+}
+
+.contact-card{
+    /* width: 50%;
+    height: 50%; */
+    border: 2px solid rgb(48 48 117 / 29%);
+    background: rgb(249 250 250);
+    text-align: center;
+}
+
+.contact-card pre{
+    padding: 0;
+}
+
+.contact-card-cont{
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.columns{
+    margin: 0;
+}
+
+.column{
+    padding: 0;
+}
+
+.contact-card h6{
+    height: 1.3em;
+    font-weight: bolder;
+}
+
+.contact-button{
+    border: 2px solid var(--main-bg1);
+    padding: 8px 10px;
+    border-radius: 40px;
+    margin: auto;
+    font-weight: bold;
+    color: var(--main-bg1);
+}
+
+.contact-button:hover{
+    background-color: var(--main-bg1);
+    color: white;
+}
+
+.icon-contact{
+    color: var(--main-bg1);
+}
+
+/* ############################# Contact styling ends ######################*/ 
+
+
+/* ############################# Newsletter styling starts ######################*/ 
+.newsletter{
+    background-color: rgba(238, 238, 255, 0.445);
+}
+
+.newsletter h1{
+    text-align: center;
+    font-size: 2em;
+    color: var(--main-bg1);
+    font-weight: bolder;
+    height: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter p{
+    text-align: center;
+    color: var(--main-bg2);
+}
+
+.newsletter-input{
+    margin: 13px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.newsletter-input a{
+    display: inline-block;
+    font-size: 1em;
+}
+
+.newsletter-input input{
+    border: 3px solid var(--main-bg1);
+    border-radius: 27px;
+    padding: 4px 6px;
+}
+.newsletter-input input:focus{
+    outline: none;
+}
+/* ############################# Newsletter styling ends ######################*/ 
+
+/* #############################  Footer styling starts ######################*/ 
+.footer-title{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0!important;
+    font-size: 1.6em;
+}
+
+.footer-address{
+    text-align: left;
+}
+
+.footer-category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0!important;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.footer-useful-links li{
+    line-height: 2em;
+}
+/* ############################# Footer styling ends ######################*/ 
